@@ -340,6 +340,8 @@ html {
     text-shadow: 2px 1px 7px #000;
     font-size: 16px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -478,6 +480,15 @@ html {
 .contact-info {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a {
+    opacity: 0.8;
+    color: #101aef;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i {

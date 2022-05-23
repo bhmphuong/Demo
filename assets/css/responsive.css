@@ -1,15 +1,15 @@
 /* Pc */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
 
 }
 
 /* Tablet*/
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
 
 }
 
 /* Mobile*/ 
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
     #nav > li {
         display: block;
     }
@@ -44,16 +44,16 @@
         display: block;
     }
 
-    #content .member-img {
-        width: 60%;
-    }
-
     .s-col-full {
         width: 100% !important;
     }
 
     .contact-form {
         margin-top: 16px !important;
+    }
+
+    .contact-info {
+        line-height: 2;
     }
 
     .s-mt-8 {
