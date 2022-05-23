@@ -1,3 +1,3 @@
 # Demo
 
-https://bhmphuong.github.io/Demo/
+https://bhmphuong.github.io/The-Band/
