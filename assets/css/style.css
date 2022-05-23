@@ -1,0 +1,541 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+
+.text-while {
+    color: #fff !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+    line-height: 46px;
+    font-size: 15px;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a {
+    background-color: #fff;
+    color: #000;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+.nav-arrow-down {
+    font-size: 15px;
+}
+
+#header .menu-mobile-btn {
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+}
+
+#header .menu-mobile-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 23px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336; 
+}
+
+#header .menu-mobile-btn:hover {
+    background: #ccc;
+}
+
+#header .menu-icon:hover {
+    color: #000;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    line-height: 46px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a {
+    color: #fff;
+    padding: 0 12px;
+    line-height: 36px;
+}
+
+#nav .subnav li:hover a {
+    background-color: #fff;
+    color: #000;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('..//img/slider.jpg') center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 3px 2px 8px #000;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 32px;    
+}
+
+#slider .text-des {
+    font-size: 18px;
+    margin-top: 25px;   
+}
+
+#content .section-content {
+    width: 800px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 4px;
+}
+
+#content .section-slogan {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* Team */
+
+#content .members-list {
+    margin-top: 32px;
+}
+
+#content .member-name {
+    font-size: 15px;
+    font-style: italic; 
+    color: #757575;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 175px;
+    height: 215px;
+    border-radius: 10px;
+}
+
+/* Tour */
+
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background: #fff;
+    margin-top: 42px;
+    list-style: none;
+}
+
+.tickets-list li { 
+    padding: 11px 16px;
+    font-size: 15px;
+    border-bottom: solid 1px #ddd;
+    color: #757575;
+}
+
+.tickets-list .sold-out {
+    margin-left: 16px;
+    background: #f44336;
+    padding: 3px 4px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    background-color: #000;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Place */
+.places-list {
+    margin-top: 16px;   
+}
+
+.place-img {
+    width: 100%;
+    height: 170px;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    padding: 16px;;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+    font-style: italic;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.btn {
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    padding: 8px 27px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 2px 1px 7px #000;
+    font-size: 16px;
+    border: none;
+}
+
+.btn:hover {
+    background-image: linear-gradient(red, yellow, green);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    /* background-color: #fff; */
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease .4s;
+    background: url(../img/germani.jpg) center / cover;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.modal-close:hover {
+    color: #CC0000;
+}
+
+.modal-header {
+    height: 129px;
+    /* background-color: #cc0000; */
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 4px #000;
+}
+
+.icon-modal-header {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+    text-shadow: 1px 2px 4px #000;
+}
+
+.modal-input {
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.modal-input::placeholder {
+    color: #000;
+}
+
+#button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px #000;
+    
+}
+
+#button:hover {
+    color: #CC0000;
+}
+
+.modal-footer {
+    float: right;
+    margin: 0 16px 32px;
+    color: #fff;
+    text-shadow: 1px 2px 4px #000;
+}
+
+.modal-footer a {
+    color: #0086f3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i {
+    width: 30px;
+    font-size: 17px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+.map-img {
+    width: 100%;
+    height: 800px;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social {
+    font-size: 24px;
+}
+
+#footer .social a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+#footer .copy {
+    margin-top: 18px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 600; 
+    background: -webkit-linear-gradient(red, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#footer .text-footer {
+    margin-top: 18px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .text-footer a {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);   
+}
